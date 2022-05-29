@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+
   <div>
     <div id="imgCtt">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
@@ -20,6 +22,7 @@
             fill: #D7282F;
           }
         </style>
+
         <path class="st0"
           d="M46.3,73.3C41,74.9,35,76,29.2,76C10,76-0.2,64-0.2,46c0-17.9,10.2-30,29.4-30c5.8,0,11.8,1.2,17.1,2.8l-2.3,12  c-5.2-1.6-8.6-2.3-12.8-2.3c-9.9,0-14.1,7.4-14.1,17.5c0,10.2,4.2,17.5,14.1,17.5c4.2,0,7.6-0.7,12.8-2.3L46.3,73.3z" />
         <path class="st0"
@@ -42,8 +45,10 @@
       </svg>
     </div>
     <form id="main">
-      <input required="" name="text" autocomplete="off" class="input" type="text" placeholder="Telefono"
+
+      <input required="" name="text" autocomplete="on" class="input" type="text" placeholder="Teléfono"
         id="number-client">
+      <textarea name="" id="mensaje-client" placeholder="Mensaje"></textarea>
       <button onclick="send()" value="Submit">
         <div class="svg-wrapper-1">
           <div class="svg-wrapper">
@@ -59,6 +64,7 @@
       </button>
     </form>
   </div>
+
   <script src=" script.js"></script>
 </body>
 
