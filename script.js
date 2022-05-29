@@ -1,23 +1,10 @@
 const API_WHATSAPP = "https://web.whatsapp.com/send?phone=";
 
 const cliente = document.querySelector("#number-client");
+const message = document.querySelector("#mensaje-client");
 function send() {
-  let phone = cliente.value;
-  let url = API_WHATSAPP + phone;
+  const phone = cliente.value;
+  const text = message.value;
+  const url = API_WHATSAPP + phone + "&text=" + text;
   window.open(url);
 }
-
-(function () {
-  $("form").each(function () {
-    $(this)
-      .find("input")
-      .keypress(function (e) {
-        // Enter pressed?
-        if (e.which == 10 || e.which == 13) {
-          this.form.submit();
-        }
-      });
-
-    $(this).find("input[type=submit]").hide();
-  });
-});
