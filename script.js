@@ -1,4 +1,4 @@
-const API_WHATSAPP = "https://web.whatsapp.com/send?phone=";
+const API_WHATSAPP = "https://api.whatsapp.com/send?phone=";
 
 const cliente = document.querySelector("#number-client");
 const message = document.querySelector("#mensaje-client");
